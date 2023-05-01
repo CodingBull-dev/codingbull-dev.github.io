@@ -2,7 +2,8 @@
 
 
 {% block content %}
-<div style="margin-top: 30px;text-align: center;">
+{% include "partials/navbar.html" %}
+<div style="margin-top: 30px;text-align: center;" class="prose">
     <h3>{{ title }}</h3>
     {{ content | safe }}
 </div>

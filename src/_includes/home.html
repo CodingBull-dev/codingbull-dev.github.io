@@ -2,8 +2,22 @@
 
 
 {% block content %}
-<div class="mx-8">
-    <div style="margin-top: 30px;text-align: center;">
+{% include "partials/navbar.html" %}
+<div class="max-w-4xl mx-6 md:mx-auto mt-16">
+    <div class="grid md:grid-cols-3 md:gap-5">
+        <div class="md:col-span-2 flex items-center justify-center flex-col">
+            <h1 class="text-3xl md:text-8xl font-semibold">Learn to <span class="color-title">Build</span></h1>
+            <h2 class="text-xl md:text-2xl">Coding Bull is a <span class="text-accent text-bold">fun</span> && <span
+                    class="text-secondary text-bold">educative</span> way to learn new skills</h2>
+            <div class="mt-4 md:mt-8">
+                {% include "partials/YoutubeButton.html" %}
+            </div>
+        </div>
+        <div class="w-full flex justify-center mt-8 md:mt-0">
+            <img src="{{ '/image/bull.png' | url }}" class="w-32 md:w-full" />
+        </div>
+    </div>
+    <div style="margin-top: 30px;text-align: center;" class="prose">
         {{ content | safe }}
     </div>
 

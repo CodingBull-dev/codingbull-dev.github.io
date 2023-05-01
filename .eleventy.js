@@ -3,6 +3,8 @@ module.exports = config => {
         return [...collection.getFilteredByGlob('./src/blog/*.md')].reverse();
     });
 
+    config.addPassthroughCopy('./src/image/');
+
     const postcssFilter = require('./src/filters/postcssFilter.js');
 
     config.addNunjucksAsyncFilter('postcss', postcssFilter);
