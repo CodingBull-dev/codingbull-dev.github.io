@@ -1,18 +1,22 @@
 {
-    "name": "coding-bull",
-    "version": "1.0.0",
-    "description": " Landing page for the Coding Bull",
-    "main": "index.js",
-    "scripts": {
-      "start": "eleventy --serve --quiet",
-      "build": "NODE_ENV=production eleventy"
-    },
-    "author": "Javier Bullrich <javier@bullrich.dev>",
-    "license": "ISC",
-    "devDependencies": {
-      "@11ty/eleventy": "^2.0.0",
-      "html-minifier": "^4.0.0",
-      "moment": "^2.29.4",
-      "openai": "^3.2.1"
-    }
+  "name": "coding-bull",
+  "version": "1.0.0",
+  "description": " Landing page for the Coding Bull",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve --quiet",
+    "build": "NODE_ENV=production eleventy"
+  },
+  "author": "Javier Bullrich <javier@bullrich.dev>",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0",
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.1",
+    "html-minifier": "^4.0.0",
+    "moment": "^2.29.4",
+    "openai": "^3.2.1",
+    "postcss": "^8.4.23",
+    "tailwindcss": "^3.3.2"
   }
+}
