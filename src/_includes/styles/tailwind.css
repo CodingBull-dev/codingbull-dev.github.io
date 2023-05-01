@@ -5,3 +5,31 @@
 .color-title {
     @apply font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-accent to-secondary
 }
+
+/* .bull {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+} */
+
+#Body {
+    --animation-duration: 1.8s;
+    transform: scale(0.2);
+}
+
+#Body {
+    animation: bull-anim var(--animation-duration) infinite;
+}
+
+@keyframes bull-anim {
+
+    0%,
+    100% {
+        transform: translateX(5%);
+    }
+
+
+    50% {
+        transform: translateX(-5%);
+    }
+}
