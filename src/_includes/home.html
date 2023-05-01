@@ -2,17 +2,19 @@
 
 
 {% block content %}
-<div style="margin-top: 30px;text-align: center;">
-    {{ content | safe }}
-</div>
+<div class="mx-8">
+    <div style="margin-top: 30px;text-align: center;">
+        {{ content | safe }}
+    </div>
 
-<div class="text-xl">Blog posts:</div>
-<ul class="list-style-type: disc;">
-    {% for post in collections.blog %}
-    <li>
-        <a href="{{ post.url }}">{{ post.data.title }}</a>
-    </li>
-    {% endfor %}
-</ul>
+    <div class="text-xl">Blog posts:</div>
+    <ul class="list-style-type: disc;">
+        {% for post in collections.blog %}
+        <li>
+            <a href="{{ post.url }}">{{ post.data.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
 
 {% endblock %}
