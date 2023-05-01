@@ -1,0 +1,11 @@
+{% extends "layouts/base.html" %}
+
+
+{% block content %}
+{% include "partials/navbar.html" %}
+<div style="margin-top: 30px;text-align: center;" class="prose">
+    <h3>{{ title }}</h3>
+    {{ content | safe }}
+</div>
+
+{% endblock %}
