@@ -15,3 +15,7 @@
     prose-headings:bg-clip-text prose-headings:bg-gradient-to-r 
     prose-headings:from-accent prose-headings:to-base-content prose-strong:text-accent;
 }
+
+#main-content {
+    min-height: 75vh;
+}
