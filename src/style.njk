@@ -3,3 +3,5 @@ permalink: "style.css"
 ---
 {% set css %} {% include "styles/tailwind.css" %} {% endset %}
 {{css | postcss | safe}}
+{% set bull %} {% include "styles/bull.css" %} {% endset %}
+{{bull | postcss | safe}}

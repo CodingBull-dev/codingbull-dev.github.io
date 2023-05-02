@@ -1,0 +1,20 @@
+#Body {
+    --animation-duration: 1.3s;
+    transform: scale(0.2);
+}
+
+#Body {
+    animation: bull-anim var(--animation-duration) infinite;
+}
+
+@keyframes bull-anim {
+
+    0%,
+    100% {
+        transform: translateX(3%);
+    }
+
+    50% {
+        transform: translateX(-3%);
+    }
+}
