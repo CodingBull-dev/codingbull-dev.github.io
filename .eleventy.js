@@ -1,14 +1,15 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const rssPlugin = require('@11ty/eleventy-plugin-rss');
 
 const tagCollection = (collection) => {
-        const tagsSet = new Set();
-        collection.getAll().forEach(item => {
-          if (!item.data.tags) return;
-          item.data.tags
+    const tagsSet = new Set();
+    collection.getAll().forEach(item => {
+        if (!item.data.tags) return;
+        item.data.tags
             .filter(tag => !['post', 'all'].includes(tag))
             .forEach(tag => tagsSet.add(tag));
-        });
-        return Array.from(tagsSet).sort();
+    });
+    return Array.from(tagsSet).sort();
 }
 
 module.exports = config => {
@@ -27,12 +28,11 @@ module.exports = config => {
     config.addNunjucksAsyncFilter('postcss', postcssFilter);
     config.addFilter('w3DateFilter', w3DateFilter);
 
-
     config.addWatchTarget('styles/**/*.css');
 
+    // Plugins
     config.addPlugin(syntaxHighlight);
-
-
+    config.addPlugin(rssPlugin);
 
     return {
         markdownTemplateEngine: 'njk',
