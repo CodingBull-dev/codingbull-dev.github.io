@@ -1,0 +1,40 @@
+{% extends "layouts/base.html" %}
+
+{% if tag %}
+{% set list = collections[tag] %}
+{% else %}
+{% set list = pagination.items %}
+{% endif %}
+
+{% block content %}
+{% include "partials/navbar.html" %}
+<div class="max-w-4xl mx-6 md:mx-auto mt-8">
+    <div style="margin-top: 30px;text-align: center;" class="prose prose-headings:text-left">
+        {{ content | safe }}
+    </div>
+    <div class="divider"></div>
+    <ul class="list-none space-y-6">
+        {% for post in list %}
+        <li>
+            <a href="{{ post.url }}" class="w-full h-full block bg-base-300 shadow-md p-4 text-primary-content">
+                <div class="flex justify-between text-xl">
+                    {{ post.data.title }}
+
+                    {% for tag in post.data.tags %}
+                    {% if tag !== 'posts' %}
+                    <span class="tag bg-primary rounded-xl py-1 px-3 text-sm" href="/tags/{{ tag }}">
+                        #{{ tag }}
+                    </span>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+                <h6 class="text-sm text-base-content">{{ post.date | w3DateFilter }}</h6>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+
+
+{% endblock %}

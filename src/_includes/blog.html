@@ -9,7 +9,7 @@
     <div class="my-4">
         {% for tag in tags %}
         {% if tag !== 'posts' %}
-        <a class="tag bg-base-300 hover:bg-primary rounded-xl py-1 px-3" href="/blog/category/{{ tag }}">
+        <a class="tag bg-base-300 hover:bg-primary rounded-xl py-1 px-3" href="/tags/{{ tag }}">
             #{{ tag }}
         </a>
         {% endif %}
