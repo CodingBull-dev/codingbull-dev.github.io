@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ '/image/bull.svg' | url }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="{{ '/style.css' | url }}">
+    <title>Coding Bull - Social Links</title>
+</head>
+
+<body>
+    <main tabindex="-1" id="main-content">
+        <div class="hero min-h-screen bg-green-800">
+            <div class="hero-content flex-col-reverse lg:flex-row md:gap-32">
+                <div class="rounded-xl overflow-hidden shadow-xl">
+                    <img src="{{ '/image/qr.png' | url }}" alt="qr code with social link" class="max-w-sm shadow-2xl" />
+                </div>
+                <div>
+                    <div class="text-yellow-500 text-6xl font-bold">
+                        Let's connect!
+                    </div>
+                    <div
+                        class="w-full max-w-sm p-4 bg-base-100 border border-base-200 rounded-lg shadow sm:p-6 dark:bg-gray-800 dark:border-gray-700 mt-4">
+                        <p class="text-sm font-normal text-base-content">Let's connect through social media</p>
+                        <ul class="my-4 space-y-3">
+                            {% if social.youtube %}
+                            <li>
+                                <a href="https://www.youtube.com/@{{ social.youtube }}" target="_blank"
+                                    class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow">
+                                    <span class="text-red-500">{% include 'partials/icons/youtube.svg' %}</span>
+                                    <span class="flex-1 ml-3 whitespace-nowrap">@{{ social.youtube }}</span>
+                                    <span
+                                        class="inline-flex items-center justify-center px-2 py-0.5 ml-3 text-xs font-medium text-gray-500 bg-gray-200 rounded dark:bg-gray-700 dark:text-gray-400">Main</span>
+                                </a>
+                            </li>
+                            {% endif %}
+
+                            {% if social.github %}
+                            <li>
+                                <a href="https://github.com/{{ social.github }}" target="_blank"
+                                    class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow">
+                                    <span class="text-gray-800">{% include 'partials/icons/github.svg' %}</span>
+                                    <span class="flex-1 ml-3 whitespace-nowrap">@{{ social.github }}</span>
+                                </a>
+                            </li>
+                            {% endif %}
+
+                            {% if social.email %}
+                            <li>
+                                <a href="mailto:{{ social.email }}"
+                                    class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow">
+                                    <span class="text-gray-800">{% include 'partials/icons/email.svg' %}</span>
+                                    <span class="flex-1 ml-3 whitespace-nowrap">{{ social.email }}</span>
+                                </a>
+                            </li>
+                            {% endif %}
+
+                            {% if social.twitter %}
+                            <li>
+                                <a href="https://twitter.com/@{{ social.twitter }}" target="_blank"
+                                    class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow">
+                                    <span class="text-blue-400">{% include 'partials/icons/twitter.svg' %}</span>
+                                    <span class="flex-1 ml-3 whitespace-nowrap">@{{ social.twitter }}</span>
+                                </a>
+                            </li>
+
+                            {% endif %}
+
+                            {% if social.instagram %}
+                            <li>
+                                <a href="https://instagram.com/@{{ social.instagram }}" target="_blank"
+                                    class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow">
+                                    <span class="text-pink-700">{% include 'partials/icons/instagram.svg' %}</span>
+                                    <span class="flex-1 ml-3 whitespace-nowrap">@{{ social.instagram }}</span>
+                                </a>
+                            </li>
+                            {% endif %}
+
+                            {% if social.reddit %}
+                            <li>
+                                <a href="https://reddit.com/r/{{ social.reddit }}" target="_blank"
+                                    class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow">
+                                    <span class="text-orange-500">{% include 'partials/icons/reddit.svg' %}</span>
+                                    <span class="flex-1 ml-3 whitespace-nowrap">/r/{{ social.reddit }}</span>
+                                </a>
+                            </li>
+                            {% endif %}
+
+                            {% if social.linkedin %}
+                            <li>
+                                <a href="https://linkedin.com/{{ social.linkedin }}" target="_blank"
+                                    class="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow">
+                                    <span class="text-blue-600">{% include 'partials/icons/linkedin.svg' %}</span>
+                                    <span class="flex-1 ml-3 whitespace-nowrap">@{{ social.linkedin }}</span>
+                                </a>
+                            </li>
+                            {% endif %}
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
