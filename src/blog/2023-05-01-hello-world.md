@@ -7,3 +7,9 @@ categories:
 Hello World!
 
 This is the first entry.
+
+```python
+import os
+
+print(f'hello {os}')
+```
