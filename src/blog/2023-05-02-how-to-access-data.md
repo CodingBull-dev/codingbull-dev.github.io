@@ -4,6 +4,7 @@ date:   2023-05-02
 tags:
     - github-action
 ---
+{% raw %}
 Let’s say you have a GitHub Action with a matrix that runs 3 jobs:
 ```yaml
 jobs:
@@ -129,3 +130,4 @@ If you want to unite all your data into a new json file, you can do something li
 Or, you can assign it to a variable using the following:
 
 `MY_JSON=$(jq -s 'reduce .[] as $x ([]; . + $x)' outputs/*.json)`
+{% endraw %}
