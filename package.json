@@ -19,8 +19,8 @@
     "daisyui": "^2.51.6",
     "html-minifier": "^4.0.0",
     "moment": "^2.29.4",
-    "openai": "^3.2.1",
-    "postcss": "^8.4.23",
+    "openai": "^4.28.0",
+    "postcss": "^8.4.31",
     "tailwindcss": "^3.3.2"
   }
 }
