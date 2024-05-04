@@ -1,6 +1,8 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const rssPlugin = require('@11ty/eleventy-plugin-rss');
 const pluginMermaid = require("@kevingimbel/eleventy-plugin-mermaid");
+const EleventyPluginOgImage = require('eleventy-plugin-og-image');
+const fs = require("fs");
 
 const tagCollection = (collection) => {
     const tagsSet = new Set();
@@ -35,6 +37,17 @@ module.exports = config => {
     config.addPlugin(syntaxHighlight);
     config.addPlugin(rssPlugin);
     config.addPlugin(pluginMermaid, { mermaid_config: { theme: "dark" } });
+    config.addPlugin(EleventyPluginOgImage, {
+        satoriOptions: {
+            fonts: [
+                {
+                    name: 'Inter',
+                    data: fs.readFileSync('node_modules/@fontsource/inter/files/inter-latin-700-normal.woff'),
+                    weight: 700,
+                    style: 'normal',
+                }],
+        }
+    });
 
     return {
         markdownTemplateEngine: 'njk',

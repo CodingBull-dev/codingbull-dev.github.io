@@ -11,6 +11,21 @@
     <script async defer data-website-id="3b2361f7-42d6-4950-ade3-6b0b6200426a"
         src="https://umami.bullrich.dev/script.js" data-domains="codingbull.dev"></script>
     <title>Coding Bull</title>
+    {% if image %}
+    <meta property="og:image" content="{{ image }}">
+    <meta name="twitter:image" content="{{ image }}">
+    {% else %}
+    {% ogImage "src/_includes/partials/opengraph.html", { title: title } %}
+    {% endif %}
+    <meta property="og:title" content="{{title}}" />
+    <meta property="twitter:title" content="{{title}}" />
+    <meta property="og:site_name" content="CodingBull" />
+    <meta property="og:url" content="https://codingbull.dev" />
+    <meta name="twitter:card" content="summary_large_image">
+    {% if description %}
+    <meta property="og:description" content="{{ description }}" />
+    <meta name="twitter:description" content="{{ description }}" />
+    {% endif %}
 </head>
 
 <body>
