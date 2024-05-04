@@ -1,7 +1,8 @@
 ---
 layout: "home.html"
 title: "Coding Bull"
-description: Video tutorials about coding.
+description: "Video tutorials about coding"
+image: "/image/landing.png"
 ---
 Hi! Welcome to Coding Bull!
 
