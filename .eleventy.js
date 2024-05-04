@@ -34,7 +34,7 @@ module.exports = config => {
     // Plugins
     config.addPlugin(syntaxHighlight);
     config.addPlugin(rssPlugin);
-    config.addPlugin(pluginMermaid);
+    config.addPlugin(pluginMermaid, { mermaid_config: { theme: "dark" } });
 
     return {
         markdownTemplateEngine: 'njk',
