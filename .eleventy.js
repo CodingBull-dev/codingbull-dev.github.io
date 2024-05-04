@@ -1,5 +1,6 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const rssPlugin = require('@11ty/eleventy-plugin-rss');
+const pluginMermaid = require("@kevingimbel/eleventy-plugin-mermaid");
 
 const tagCollection = (collection) => {
     const tagsSet = new Set();
@@ -33,6 +34,7 @@ module.exports = config => {
     // Plugins
     config.addPlugin(syntaxHighlight);
     config.addPlugin(rssPlugin);
+    config.addPlugin(pluginMermaid);
 
     return {
         markdownTemplateEngine: 'njk',
