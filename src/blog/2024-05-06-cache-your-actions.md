@@ -49,4 +49,4 @@ We also don’t want to cache the dependencies for a different OS, so we add to 
 
 And that’s all! Now you can cache all your actions.
 
-Remember to [checkout the examples for your specific package manager](https://github.com/actions/cache/blob/main/examples.md).![](#)
+Remember to [checkout the examples for your specific package manager](https://github.com/actions/cache/blob/main/examples.md).
