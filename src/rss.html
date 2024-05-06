@@ -24,7 +24,11 @@ permalink: '/feed.xml'
         <id>{{ absolutePostUrl }}</id>
         <content type="html">
             <![CDATA[
-        {{ post.templateContent | safe }}
+            {% if post.data.description %}
+                {{ post.data.description | safe }}
+            {% else %}
+                {{ post.templateContent | safe }}
+            {% endif %}
       ]]>
         </content>
     </entry>

@@ -2,6 +2,8 @@
 title:  "You can use GitHub actions major version by itself"
 permalink: "/blog/github-actions-major-version.html"
 date:   2024-05-05
+description: |
+    Did you know that the official GitHub actions provide a shortcut for the latest major version? Any action that [starts with `actions/`](https://github.com/actions) usually has two versions that you can use.
 tags:
     - github-action
 ---

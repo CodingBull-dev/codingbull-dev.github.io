@@ -1,6 +1,7 @@
 ---
 title:  Run all your tests concurrently
 date:   2024-05-04
+description: Find out how you can fail-fast every CI check, letting your developers fix every test at the same time
 tags:
     - github-action
 ---

@@ -1,6 +1,7 @@
 ---
 title:  "How to access data between Matrix outputs"
 date:   2023-05-02
+description: An introduction into how tricky it is to obtain the output from a matrix
 tags:
     - github-action
 ---
