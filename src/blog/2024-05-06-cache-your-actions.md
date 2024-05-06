@@ -9,7 +9,7 @@ tags:
 ---
 If your actions have a long installation step (or very big `node_modules`) you can cache the installation step using the GitHub action [`actions/cache`](https://github.com/actions/cache).
 
-This is very useful for cases where you use a [matrix to run multiple tests](../run-all-your-tests-concurrently).
+This is very useful for cases where you use a [matrix to run multiple tests](./run-all-your-tests-concurrently).
 
 ![](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTBqbThwcnI5a3R3NHJ3ZzdwZ3ZjNXc0ZnM1bHBqM3JoeHhqanN6byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WSy0SI6qipEDJogaGD/giphy.gif)
 
@@ -49,4 +49,4 @@ We also don’t want to cache the dependencies for a different OS, so we add to 
 
 And that’s all! Now you can cache all your actions.
 
-Remember to [checkout the examples for your specific package manager](https://github.com/actions/cache/blob/main/examples.md).![](#)
+Remember to [checkout the examples for your specific package manager](https://github.com/actions/cache/blob/main/examples.md).
