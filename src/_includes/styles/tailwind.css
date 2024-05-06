@@ -11,9 +11,7 @@
 }
 
 .blog-content {
-    @apply prose lg:prose-xl text-primary-content prose-headings:text-transparent 
-    prose-headings:bg-clip-text prose-headings:bg-gradient-to-r 
-    prose-headings:from-accent prose-headings:to-base-content prose-strong:text-accent;
+    @apply prose lg:prose-xl text-primary-content prose-headings:text-transparent prose-headings:bg-clip-text prose-headings:bg-gradient-to-r prose-headings:from-accent prose-headings:to-base-content prose-strong:text-accent prose-a:text-secondary prose-code:px-0;
 }
 
 #main-content {
