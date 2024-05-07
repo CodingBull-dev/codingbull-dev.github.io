@@ -46,7 +46,9 @@ module.exports = config => {
                     weight: 700,
                     style: 'normal',
                 }],
-        }
+        },
+        generateHTML: (outputUrl) => `<meta property="og:image" content="${outputUrl}" />\n    ` +
+            `<meta property="twitter:image" content="${outputUrl}" />`
     });
 
     return {
