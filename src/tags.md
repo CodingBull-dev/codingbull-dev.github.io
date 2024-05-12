@@ -6,5 +6,5 @@ pagination:
   data: collections.tagList
   size: 100
   alias: tag
+permalink: /tags/
 ---
-Find all the tags and search for posts based on that
