@@ -12,6 +12,8 @@
         src="https://umami.bullrich.dev/script.js" data-domains="codingbull.dev"></script>
     {% if title %}
     <title>{{ title }} - Coding Bull</title>
+    {% else %}
+    <title>Coding Bull</title>
     {% endif %}
     {% if image %}
     <meta property="og:image" content="{{ image }}">
