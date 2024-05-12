@@ -10,7 +10,9 @@
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
     <script async defer data-website-id="3b2361f7-42d6-4950-ade3-6b0b6200426a"
         src="https://umami.bullrich.dev/script.js" data-domains="codingbull.dev"></script>
-    <title>Coding Bull</title>
+    {% if title %}
+    <title>{{ title }} - Coding Bull</title>
+    {% endif %}
     {% if image %}
     <meta property="og:image" content="{{ image }}">
     <meta name="twitter:image" content="{{ image }}">
