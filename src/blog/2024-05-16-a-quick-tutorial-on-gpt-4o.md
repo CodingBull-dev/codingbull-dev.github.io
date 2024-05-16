@@ -6,6 +6,7 @@ description: |
 tags:
     - openai
     - ai
+video: "4GPXwaWyxX8?si=m60rvMjzd7D9Qq5o"
 ---
 Now that [GPT-4o](https://openai.com/index/hello-gpt-4o/) has been released, let’s look into how we can implement our custom GPT-4o assistant.
 
