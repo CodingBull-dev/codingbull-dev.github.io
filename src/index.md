@@ -10,6 +10,6 @@ Want to learn some niche coding tricks? Are you just looking to improve your dai
 
 Then you are in the right place!
 
-## New videos are being added to our Youtube channel daily.
+## New videos are being added to our Youtube channel weekly.
 
 You can also subscribe to our newsletter to receive the latest news.
